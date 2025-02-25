@@ -14,9 +14,16 @@ portfolio = {
         {"title": "Image Classification", "link": "https://your-dl-project.com"},
         {"title": "Speech Recognition", "link": "https://your-dl-project2.com"},
     ],
-    "AI": [
-        {"title": "AI Chatbot", "link": "https://your-ai-project.com"},
-        {"title": "Recommendation System", "link": "https://your-ai-project2.com"},
+    "AI Chatbots": [
+        {"title": "Travel Planning AI Assistant", "link": "https://travelbookingassistant-b5k669k2bkk3jeewz7uiwk.streamlit.app/"},
+        {"title": "Symptom Assessment Assistant", "link": "https://symptomchecker-7gfmqvakqyanbbpfb5ybuj.streamlit.app/"},
+        {"title": "AI-Powered Career Toolkit", "link": "https://resumecoverletterwriter-9lwongwhsygod6c6whtmd6.streamlit.app/"},
+          {"title": "Real Estate Property Advisor", "link": "https://realestate-lm7f4skfmrk88qqjqvi3qx.streamlit.app/"},
+        {"title": "AI Personal Finance Assistant", "link": "https://personalfinanceassistant-cxm7iwsskydnmd7ziajlcx.streamlit.app/"},
+          {"title": "AI Student Assistant", "link": "https://mathsloving-bjmlf6stjvkycvjhgpvmte.streamlit.app/"},
+        {"title": "Social Media AI Assistant", "link": "https://linkedinpost-vgf8rqswygtrqfsbxmhvyh.streamlit.app/"},
+          {"title": "Lead Generation Assistant", "link": "https://leadgenerationqualificationbot-gtfdzkeumv38abcydiskvl.streamlit.app/"},
+        {"title": "AI Legal Advisor", "link": "https://ailegaladvisor-rcmcuixqvasjjgp5aeuvfs.streamlit.app/"},
     ]
 }
 
@@ -30,35 +37,41 @@ st.markdown(
             background-color: #121212;
             color: white;
         }
+
         .main-title {
             text-align: center;
             font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 20px;
         }
+
         .section-title {
             font-size: 2rem;
             margin-top: 30px;
             border-bottom: 2px solid #1db954;
             padding-bottom: 5px;
         }
+
         .card {
             background-color: #1e1e1e;
             padding: 15px;
             border-radius: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
             box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
             transition: transform 0.3s ease-in-out;
             text-align: center;
         }
+
         .card:hover {
             transform: scale(1.05);
         }
+
         .card a {
             color: #1db954;
             text-decoration: none;
             font-weight: bold;
         }
+
         .footer {
             text-align: center;
             padding: 10px;
@@ -75,24 +88,19 @@ st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "About", "Contact"])
 
 if page == "Home":
-    # App Title
     st.markdown("<h1 class='main-title'>🚀 My AI & Data Science Portfolio</h1>", unsafe_allow_html=True)
     st.write("Welcome to my portfolio showcasing projects in Data Science, Machine Learning, Deep Learning, and AI.")
     
-    # Display sections
     for category, projects in portfolio.items():
         st.markdown(f"<h2 class='section-title'>{category}</h2>", unsafe_allow_html=True)
-        cols = st.columns(len(projects))
-        
-        for col, project in zip(cols, projects):
-            with col:
-                st.markdown(
-                    f"<div class='card'>"
-                    f"<h3>{project['title']}</h3>"
-                    f"<a href='{project['link']}' target='_blank'>View Project</a>"
-                    "</div>",
-                    unsafe_allow_html=True,
-                )
+        for project in projects:
+            st.markdown(
+                f"<div class='card'>"
+                f"<h3>{project['title']}</h3>"
+                f"<a href='{project['link']}' target='_blank'>View Project</a>"
+                "</div>",
+                unsafe_allow_html=True,
+            )
 
 elif page == "About":
     st.title("About Me")
