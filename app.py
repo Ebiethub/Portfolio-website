@@ -24,6 +24,7 @@ portfolio = {
         {"title": "Social Media AI Assistant", "link": "https://linkedinpost-vgf8rqswygtrqfsbxmhvyh.streamlit.app/"},
           {"title": "Lead Generation Assistant", "link": "https://leadgenerationqualificationbot-gtfdzkeumv38abcydiskvl.streamlit.app/"},
         {"title": "AI Legal Advisor", "link": "https://ailegaladvisor-rcmcuixqvasjjgp5aeuvfs.streamlit.app/"},
+        {"title": "Voice & Multilingual AI Chatbot", "link": "https://textspeech-gwwephrm5g5ra9nbrnlhpx.streamlit.app/"},
     ]
 }
 
