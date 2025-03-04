@@ -26,6 +26,8 @@ portfolio = {
         {"title": "AI Legal Advisor", "link": "https://ailegaladvisor-rcmcuixqvasjjgp5aeuvfs.streamlit.app/"},
         {"title": "Voice & Multilingual AI Chatbot", "link": "https://textspeech-gwwephrm5g5ra9nbrnlhpx.streamlit.app/"},
         {"title": "NollyScript AI", "link": "https://moviescriptbot-s6ymqugylyssfocwckxd46.streamlit.app/"},
+        {"title": "AI Business Consultant Bot", "link": "https://usiness-consultant-bot-fxgbdbudywkpvxdqidwexh.streamlit.app/"},
+        {"title": "MoneyMentorAI", "link": "https://moneymentorai-i6xnuehbeqrjdqtxcyvyma.streamlit.app/"},
     ]
 }
 
