@@ -28,6 +28,7 @@ portfolio = {
         {"title": "NollyScript AI", "link": "https://moviescriptbot-s6ymqugylyssfocwckxd46.streamlit.app/"},
         {"title": "AI Business Consultant Bot", "link": "https://usiness-consultant-bot-fxgbdbudywkpvxdqidwexh.streamlit.app/"},
         {"title": "MoneyMentorAI", "link": "https://moneymentorai-i6xnuehbeqrjdqtxcyvyma.streamlit.app/"},
+        {"title": "AI Vision Assistant", "link": "https://aiimagechat-rgrvtfpatyc5foawb7o6ax.streamlit.app/"},
     ]
 }
 
